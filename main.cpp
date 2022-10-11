@@ -8,10 +8,16 @@ void time(int GivenSeconds, int& hours, int& mins, int& secs);
 int main() {
 
   int seconds = 0;
-  int hours, mins, secs;
+  int hours = 0;
+  int mins = 0;
+  int secs = 0;
   
   cout << "Please input the number of seconds you would like to convert: " << endl;
   cin >> seconds;
+
+  time(seconds, hours, mins, secs);
+  
+  cout << hours << " Hours, " << mins << " Minutes, and " << secs << " Seconds" << endl;
 
   
   return 0;
